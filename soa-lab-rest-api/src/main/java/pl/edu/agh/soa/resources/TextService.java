@@ -12,9 +12,11 @@ import java.util.ArrayList;
 public class TextService {
 
     private static final String log_file_path = "E:\\restresources\\";
-    private ArrayList<String>text=new ArrayList<String>();
+    private ArrayList<String> strings=new ArrayList<String>();
+
+
     @GET
-    @Path("getText")
+    @Path("/file")
     @Produces("text/plain")
     public Response getLog(){
         File file= new File(log_file_path);
@@ -23,7 +25,7 @@ public class TextService {
         return  response.build();
     }
     @GET
-    @Path("text/{param}")
+    @Path("files/{param}")
     @Produces("text/plain")
     public Response getText(@PathParam("param") String name){
         File file= new File(log_file_path+name);
@@ -34,7 +36,8 @@ public class TextService {
     @Path("/getAll")
     @Produces("text/plain")
     public Response getWorkersJson(){
-        return Response.status(Response.Status.OK).entity(text).build();
+        strings.add("Start");
+        return Response.status(Response.Status.OK).entity(strings).build();
     }
 
     @POST
@@ -43,7 +46,8 @@ public class TextService {
     public Response postString( String str )
     {
         String output = str;
-        text.add(output);
+        strings.add(str);
+        strings.add(output);
         return Response.status(Response.Status.OK).entity(output).build();
     }
 

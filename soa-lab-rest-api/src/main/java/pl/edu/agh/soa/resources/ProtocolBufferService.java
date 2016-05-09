@@ -5,9 +5,14 @@ import javax.ws.rs.*;
 /**
  * Created by Dylek on 2016-05-07.
  */
-@Path("/protocolb")
+@Path("/protocol")
 public class ProtocolBufferService {
 
-
+   /* @GET
+    @Produces("application/x-protobuf")
+    public AdressBookProtos.Person getPerson(){
+        return Adress
+    }
+*/
 
 }
