@@ -1,0 +1,9 @@
+pl\edu\agh\soa\resources\TestResource.class
+pl\edu\agh\soa\resources\model\Worker.class
+pl\edu\agh\soa\resources\ImageService.class
+pl\edu\agh\soa\rest\RestService.class
+pl\edu\agh\soa\resources\TextService.class
+pl\edu\agh\soa\resources\JsonService.class
+pl\edu\agh\soa\resources\ProtocolBufferService.class
+pl\edu\agh\soa\resources\model\Student.class
+pl\edu\agh\soa\resources\PdfService.class
