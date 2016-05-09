@@ -8,6 +8,10 @@ public class Worker {
     private int id;
     private float salary;
 
+    public Worker(){
+
+    }
+
     public Worker(String name,float salary,int id){
         this.name=name;
         this.salary=salary;
